@@ -8,4 +8,4 @@ git commit -m "Updates"
 
 git push
 
-./reflex run
+./'reflex run'
