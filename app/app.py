@@ -1,10 +1,10 @@
-"""Welcome to Reflex! This file outlines the steps to create a basic app."""
-from rxconfig import config
+# """Welcome to Reflex! This file outlines the steps to create a basic app."""
+# from rxconfig import config
 
 import reflex as rx
 
-docs_url = "https://reflex.dev/docs/getting-started/introduction"
-filename = f"{config.app_name}/{config.app_name}.py"
+# docs_url = "https://reflex.dev/docs/getting-started/introduction"
+# filename = f"{config.app_name}/{config.app_name}.py"
 
 
 # navbar_style = {
@@ -101,6 +101,40 @@ def about():
         # mul_sel(),
     ),
     )
+
+"""
+Traceback (most recent call last):
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/bin/reflex", line 5, in <module>
+Sep 16 10:19:44 PM      from reflex.reflex import cli
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/__init__.py", line 8, in <module>
+Sep 16 10:19:44 PM      from . import el as el
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/el/__init__.py", line 3, in <module>
+Sep 16 10:19:44 PM      from .elements import *
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/el/elements/__init__.py", line 4, in <module>
+Sep 16 10:19:44 PM      from reflex.el.element import Element
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/el/element.py", line 5, in <module>
+Sep 16 10:19:44 PM      from reflex.components.component import Component
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/components/__init__.py", line 7, in <module>
+Sep 16 10:19:44 PM      from .datadisplay import *
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/components/datadisplay/__init__.py", line 4, in <module>
+Sep 16 10:19:44 PM      from .code import Code, CodeBlock
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/components/datadisplay/code.py", line 6, in <module>
+Sep 16 10:19:44 PM      from reflex.components.forms import Button
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/components/forms/__init__.py", line 18, in <module>
+Sep 16 10:19:44 PM      from .iconbutton import IconButton
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/components/forms/iconbutton.py", line 3, in <module>
+Sep 16 10:19:44 PM      from reflex.components.typography.text import Text
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/components/typography/__init__.py", line 7, in <module>
+Sep 16 10:19:44 PM      from .markdown import Markdown
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/components/typography/markdown.py", line 6, in <module>
+Sep 16 10:19:44 PM      from reflex.compiler import utils
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/compiler/utils.py", line 25, in <module>
+Sep 16 10:19:44 PM      from reflex.state import Cookie, LocalStorage, State
+Sep 16 10:19:44 PM    File "/opt/render/project/src/.venv/lib/python3.7/site-packages/reflex/state.py", line 1167
+Sep 16 10:19:44 PM      /,
+Sep 16 10:19:44 PM      ^
+
+"""
 
 # Add state and page to the app.
 app = rx.App()
