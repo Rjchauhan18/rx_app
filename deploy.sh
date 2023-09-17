@@ -1,14 +1,14 @@
 #!/bin/bash
 
-hugo
+# hugo
 
-git add .
+# git add .
 
-git commit -m "Updates"
+# git commit -m "Updates"
 
-git push
+# git push
 # Install Reflex
-pip install reflex
+pip install -r requirements.txt 
 
 # Start the Reflex app
 reflex run
