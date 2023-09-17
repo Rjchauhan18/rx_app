@@ -5,5 +5,6 @@ class AppConfig(rx.Config):
 
 config = AppConfig(
     app_name="app",
+    api_url="http://app.Rc-portfolio.com:8000"
     
 )
